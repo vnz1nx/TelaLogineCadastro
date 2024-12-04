@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <script src="https://kit.fontawesome.com/092c306b2e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="imagens/icons8-cat-head-16.png" type="image/x-icon">
+
+    <script src="script.js"></script>
+
+</head>
+
+
+
+<body>
+
+
+<div class='container'>
+
+  <div class='card'>
+
+    <h1> Entrar </h1>
+
+    
+
+    <div class='label-float'>
+
+      <input type='text' id="usuario" paceholder='' autofoco required>
+
+      <label id='userLabel' for='usuario'>Usuario</label>
+
+    </div>
+
+    
+
+    <div class='label-float'>
+
+      <input type='password' id="senha" paceholder='' required>
+      <label id='senhaLabel' for='senha'>Senha</label>
+      <i class="fa-regular fa-eye-slash" id="olho1" onclick="alteraVisibilidadeDeSenha('senha', 'olho1')"></i>
+
+    </div>
+
+    
+
+    <div class='justify-center'>
+
+      <button onclick="resultado()">Entrar</button>
+
+    </div>
+    <p id="resultado"></p>
+
+    
+
+    <div class='justify-center'>
+
+      <hr>
+
+    </div>
+
+    
+
+    <p> Não tem uma conta?
+
+      <a href='index2.html'> Cadastre-se </a>
+
+    </p>
+
+  </div>
+
+  </div>
+
+</body>
+
+</html>

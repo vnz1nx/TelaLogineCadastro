@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Seus cabeçalhos vão aqui -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <script src="https://kit.fontawesome.com/092c306b2e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="connection_login.js">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="imagens/icons8-cat-head-16.png" type="image/x-icon">
+</head>
+
+<body>
+    <form onsubmit="event.preventDefault(); cadastra()" method="POST">
+        <div class='container'>
+            <div class='card'>
+                <h1> Cadastrar </h1>
+                <div id='msgError'></div>
+                <div id='msgSuccess'></div>
+
+                <div class="label-float">
+                    <input type="text" name="nome" id="nome" placeholder=" " required autofocus autocomplete="address-level4">
+                    <label id="labelNome" for="nome">Nome</label>
+                </div>
+
+                <div class="label-float">
+                    <input type="text" name="email" id="email" placeholder=" " required>
+                    <label id="labelEmail" for="email">Email</label>
+                </div>
+
+                <div class="label-float">
+                    <input type="password" name="senha" id="senha" placeholder=" " required>
+                    <label id="labelSenha" for="senha">Senha</label>
+                    <i class="fa-regular fa-eye-slash" id="olho1" onclick="alteraVisibilidadeDeSenha('senha', 'olho1')"></i>
+                </div>
+
+                <div class="label-float">
+                    <input type="password" id="confirmSenha" placeholder=" " required>
+                    <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                    <i class="fa-regular fa-eye-slash" id="olho2ConfS" onclick="alteraVisibilidadeDeSenha('confirmSenha', 'olho2')"></i>
+                </div>
+
+                <p id="resultado"></p>
+
+                <div class='justify-center'>
+                    <button onclick="cadastra()" name='submit' type="submit">Cadastrar</button>
+                </div>
+
+                <p> Já tem uma conta?  
+                    <a href="index.html">Login</a>
+                </p>
+            </div>
+        </div>
+    </form>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
